@@ -57,8 +57,8 @@
                                     {{ __('Dashboard') }}
                                 </a>
                             </li>
-                            <li class="nav-item p-2">
-                                <a class="nav-link text-muted{{ Route::currentRouteName() == 'admin.projects.index' ? 'bg-dark  text-white-50' : 'text-muted' }}"
+                            <li class="nav-item">
+                                <a class="nav-link p-2 {{ Route::currentRouteName() == 'admin.projects.index' ? 'bg-dark  text-white-50' : 'text-muted' }}"
                                     href="{{ route('admin.projects.index') }}">
                                     <i class="fa-solid fa-thumbtack"></i>
                                     {{ __('Project') }}
@@ -148,7 +148,7 @@
                 </nav> --}}
 
         <main class="col-12 d-flex justify-content-between">
-            <nav class="d-none col-md-4 col-xl-2 d-md-block bg-light sidebar collapse desktop_nav">
+            <nav class="d-none col-md-4 col-lg-2 d-md-block bg-light sidebar collapse desktop_nav">
                 <div class="position-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
@@ -159,7 +159,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-muted{{ Route::currentRouteName() == 'admin.projects.index' ? 'bg-dark  text-white-50' : 'text-muted' }}"
+                            <a class="nav-link {{ Route::currentRouteName() == 'admin.projects.index' ? 'bg-dark text-white-50' : 'text-muted' }}"
                                 href="{{ route('admin.projects.index') }}">
                                 <i class="fa-solid fa-thumbtack"></i>
                                 {{ __('Project') }}
@@ -181,7 +181,7 @@
                     </ul>
                 </div>
             </nav>
-            <div class="modular_content">
+            <div class="modular_content w-100">
                 @yield('content')
             </div>
         </main>
