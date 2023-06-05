@@ -1,1 +1,21 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+
+.desktop_nav {
+    position: relative;
+    top: 56px;
+    height: calc(100vh - 56px);
+
+}
+
+.no_undescore {
+    text-decoration: none;
+}
+
+.modular_content {
+    flex-grow: 2;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    position: relative;
+    top: 56px;
+}
