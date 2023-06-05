@@ -57,6 +57,13 @@
                                     {{ __('Dashboard') }}
                                 </a>
                             </li>
+                            <li class="nav-item p-2">
+                                <a class="nav-link text-muted{{ Route::currentRouteName() == 'admin.projects.index' ? 'bg-dark  text-white-50' : 'text-muted' }}"
+                                    href="{{ route('admin.projects.index') }}">
+                                    <i class="fa-solid fa-thumbtack"></i>
+                                    {{ __('Project') }}
+                                </a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link p-2 " href="#">
                                     <i class="fa-solid fa-bookmark"></i>
@@ -151,13 +158,13 @@
                                 {{ __('Dashboard') }}
                             </a>
                         </li>
-                        {{-- <li class="nav-item">
-                            <a class="nav-link text-muted{{ Route::currentRouteName() == 'admin.posts.index' ? 'bg-dark  text-white-50' : 'text-muted' }}"
-                                href="{{ route('admin.posts.index') }}">
+                        <li class="nav-item">
+                            <a class="nav-link text-muted{{ Route::currentRouteName() == 'admin.projects.index' ? 'bg-dark  text-white-50' : 'text-muted' }}"
+                                href="{{ route('admin.projects.index') }}">
                                 <i class="fa-solid fa-thumbtack"></i>
-                                {{ __('Posts') }}
+                                {{ __('Project') }}
                             </a>
-                        </li> --}}
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-muted" href="#">
                                 <i class="fa-solid fa-bookmark"></i>
