@@ -27,7 +27,10 @@
 
         <nav class="navbar navbar-light bg-light bg-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand text-light" href="#">My Projects</a>
+                <div class="d-flex align-items-center h-100">
+                    <h3 class="text-light me-3">My Projects</h3>
+                    <a class="navbar-brand text-light text-white-50" href="{{ route('welcome') }}">Home</a>
+                </div>
                 <div class="">
                     <a class="no_undescore text-light p-2 d-none d-md-block" href="#">
                         Sign out
@@ -48,7 +51,7 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 ">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="{{ route('welcome') }}">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link p-2 {{ Route::currentRouteName() == 'admin.dashboard' ? 'bg-dark text-white' : '' }}"
