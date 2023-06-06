@@ -10,7 +10,7 @@
     <h1 class="text-primary container font_title">Add new Project</h1>
     <div class="container d-flex justify-content-center align-item-center">
         <div class="form_container w-100">
-            <form class="text-white" action="{{ route('admin.projects.store') }}" method="POST" class="w-100">
+            <form class="text-white w-100" action="{{ route('admin.projects.store') }}" method="POST">
                 @csrf
 
                 <div class="mb-3 ">

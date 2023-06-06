@@ -35,9 +35,19 @@
                         <td><img height="100" src="{{ $project->logo }}" alt="{{ $project->title }}"></td>
                         <td>{{ $project->title }}</td>
                         <td>{{ $project->link }}</td>
-                        <td>
 
-                            VIEW/EDIT/DELETE
+                        <td class="buttons_container d-flex flex-column ">
+                            <a name="" id="" class="btn btn-primary my-1 fs_13"
+                                href="{{ route('admin.projects.show', $project) }}" role="button"> <i class="fa fa-eye"
+                                    aria-hidden="true"></i></a>
+                            <a name="" id="" class="btn btn-primary my-1 fs_13"
+                                href="{{ route('admin.projects.edit', $project) }}" role="button"><i
+                                    class="fa-solid fa-pen-to-square"></i> </a>
+
+                            <button type="button" class="btn btn-danger my-1 fs_13" data-bs-toggle="modal"
+                                data-bs-target="#project-delete-{{ $project->id }}">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
 
                         </td>
 
