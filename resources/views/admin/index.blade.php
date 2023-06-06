@@ -3,7 +3,9 @@
 
 @section('content')
     <h1 class="px-2">Show projects table</h1>
-    <a class="btn btn-dark m-2" href="{{ route('admin.projects.create') }}" role="button">Create Post</a>
+    <a class="btn btn-dark m-2 mb-3" href="{{ route('admin.projects.create') }}" role="button">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+        Add new Projectt</a>
 
     {{-- @include('partials.session_message') --}}
 

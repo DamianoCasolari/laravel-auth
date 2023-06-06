@@ -12,7 +12,7 @@
                 </h1>
 
                 <p><i>
-                        My job is to create <b>tailor-made sites</b> for you
+                        My job is to create <b>tailor-made sites</b> for <span class="text-primary">you</span>,
                     </i></p>
             </div>
         </div>
