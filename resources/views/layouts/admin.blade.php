@@ -25,7 +25,7 @@
 <body>
     <div id="app">
 
-        <nav class="navbar navbar-light bg-light bg-dark fixed-top">
+        <nav class="navbar navbar-light bg-light bg-dark fixed-top shadow">
             <div class="container-fluid">
                 <div class="d-flex align-items-center h-100">
                     <h3 class="text-light me-3">My Projects</h3>
