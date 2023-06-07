@@ -2,8 +2,9 @@
 
 @section('title', $project->title)
 @section('content')
-    <div class="add_project_container container d-flex justify-content-end py-4 light_shadow">
-        <a href="{{ route('admin.projects.index') }}" type="button" class="btn btn-dark my_button ">
+    <div class="banner container d-flex justify-content-end py-4 shadow-sm">
+        <a href="{{ route('admin.projects.index') }}" type="button"
+            class="btn btn-dark my_button position-sticky top-0 shadow-sm">
             <i class="fa-solid fa-house"></i> Back to index</a>
     </div>
     <div class="container d-flex flex-column justify-content-around">

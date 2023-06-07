@@ -5,3 +5,26 @@
 .fs_13 {
     font-size: 13px !important;
 }
+
+.grow {
+    flex-grow: 100;
+}
+
+
+.pointer {
+    cursor: pointer;
+}
+
+.banner {
+    position: sticky;
+    background-color: rgb(242, 231, 231);
+    top: 0;
+}
+
+.text_shadow {
+    text-shadow: 0 0 1px rgb(33, 33, 33);
+}
+
+.strong_shadow {
+    filter: drop-shadow(1px 2px 3px rgba(25, 25, 25, 0.885));
+}
