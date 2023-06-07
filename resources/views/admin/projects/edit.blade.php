@@ -12,7 +12,7 @@
     @include('profile.partials.validation_errors')
     <div class="container d-flex justify-content-center align-item-center">
         <div class="form_container w-100">
-            <form class="text-white w-100" action="{{ route('admin.projects.update', $project->id) }}" method="POST">
+            <form class="text-white w-100" action="{{ route('admin.projects.update', $project->slug) }}" method="POST">
                 @csrf
                 @method('PUT')
                 <div class="mb-3 ">

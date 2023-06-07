@@ -32,11 +32,14 @@
 
                 @forelse ($projects as $project)
                     <tr class="table-primary pointer text-center" {{-- onclick="window.location.href = '{{ route('admin.projects.show', $project) }}';" --}}>
-                        <td scope="row">
+                        <td scope="row" onclick="window.location.href = '{{ route('admin.projects.show', $project) }}';">
                             {{ $project->id }}</td>
-                        <td><img height="100" src="{{ $project->logo }}" alt="{{ $project->title }}"></td>
-                        <td>{{ $project->title }}</td>
-                        <td>{{ $project->link }}</td>
+                        <td onclick="window.location.href = '{{ route('admin.projects.show', $project) }}';"><img
+                                height="100" src="{{ $project->logo }}" alt="{{ $project->title }}"></td>
+                        <td onclick="window.location.href = '{{ route('admin.projects.show', $project) }}';">
+                            {{ $project->title }}</td>
+                        <td onclick="window.location.href = '{{ route('admin.projects.show', $project) }}';">
+                            {{ $project->link }}</td>
 
                         <td class="buttons_container text-center">
                             {{-- <a name="" id="" class="btn btn-primary my-1 fs_13"
@@ -72,7 +75,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                    <form action="{{ route('admin.projects.destroy', $project->id) }}" method="post">
+                                    <form action="{{ route('admin.projects.destroy', $project->slug) }}" method="post">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger m-1">Delete</button>

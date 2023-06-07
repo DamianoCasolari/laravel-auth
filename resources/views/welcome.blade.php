@@ -1,12 +1,12 @@
 @extends('layouts.app')
 @section('content')
-    <div class="jumbotron p-5 bg-light rounded-3 vh_100 d-flex align-items-center justify-content-center">
-        <div class="container py-5 d-flex align-items-center justify-content-center">
-            <div class=" text-center ghost">
+    <div class="jumbotron p-5 bg-light rounded-3 vh_100 d-flex align-items-center justify-content-center bg_color">
+        <div class="container py-5 d-flex flex-wrap align-items-center justify-content-center">
+            <div class=" text-center ghost col-sm-6">
                 <img src="{{ asset('img/photo.jpg') }}" alt="DC Logo" height="300" class="rounded-4 shadow">
             </div>
 
-            <div class="info_contaienr ps-4">
+            <div class="info_contaienr p-2 col-sm-6 text-center text-sm-start">
                 <h1 id="myText">
                     <span class="fade_in position-relative">Hi, I'm Damiano</span>
 

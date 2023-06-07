@@ -41,7 +41,7 @@
                     aria-controls="offcanvasNavbar">
                     <i class="fa-solid fa-bars"></i>
                 </button>
-                <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasNavbar"
+                <div class="offcanvas offcanvas-end d-md-none vh100" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>

@@ -18,6 +18,7 @@
 .banner {
     position: sticky;
     background-color: rgb(242, 231, 231);
+    // background-image: url(../../../public/img/Default_minimal_brush_strokes_with_very_bright_colorsadss_on_to_ba_0.jpg);
     top: 0;
 }
 
@@ -27,4 +28,12 @@
 
 .strong_shadow {
     filter: drop-shadow(1px 2px 3px rgba(25, 25, 25, 0.885));
+}
+
+.bg_color {
+    background-image: url(../../../public/img/Default_minimal_brush_strokes_with_very_bright_colorsadss_on_to_ba_0.jpg) !important;
+}
+
+.vh100 {
+    height: 100vh;
 }
